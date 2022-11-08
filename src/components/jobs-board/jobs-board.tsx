@@ -1,6 +1,6 @@
 import styles from './jobs-board.module.css'
 import {useAppSelector} from "../../hooks/redux";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import List from "../list/list";
 import ReactPaginate from "react-paginate";
 import PaginateStateI from "../../models/paginateState";
@@ -25,6 +25,10 @@ export default function JobsBoard(){
             behavior: 'smooth'
         })
     }
+
+    useEffect(()=> {
+        window.scrollTo(0,0)
+    },[])
     return (
         <>
             {(showApp && list) && (
