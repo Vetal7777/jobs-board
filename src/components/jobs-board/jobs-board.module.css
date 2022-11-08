@@ -1,0 +1,78 @@
+.container{
+    display: flex;
+    padding: 29px 20px;
+    background-color: #E6E9F2;
+    min-width: 100vw;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 49px;
+}
+.container *{
+    font-family: "Proxima Nova";
+}
+@media (max-width: 768px) {
+    .container{
+        padding: 9px;
+        row-gap: 26px;
+    }
+}
+.pagination{
+    display: flex;
+    background-color: white;
+    box-shadow: 2px 1px 7px rgba(0, 0, 0, 0.08), 0px 2px 1px -1px rgba(0, 0, 0, 0.04), 0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 10.4px;
+    padding: 10.4px 23px;
+    column-gap: 15px;
+}
+.pagination *{
+    list-style-type: none;
+}
+.link,.break{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    letter-spacing: 1.73333px;
+    color: #70778B;
+    font-size: 20.8px;
+    line-height: 25px;
+    cursor: pointer;
+    position: relative;
+    width: 31px;
+    height: 31px;
+    justify-content: center;
+}
+.active{
+    color: #5876C5;
+}
+.active:after{
+    content: '';
+    background-color: #5876C5;
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    bottom: -10.4px;
+}
+.previous,.next{
+    display: flex;
+    align-items: center;
+    min-height: 31px;
+    border-right: 1.3px solid #DEE3EF;
+    padding-right: 31px;
+}
+.previous a:hover,
+.next a:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+.next{
+    transform: rotate(180deg);
+}
+.previous a,
+.next a {
+    height: 18px;
+}
+.disable{
+    opacity: 0;
+    transform: scale(0);
+}

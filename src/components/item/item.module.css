@@ -1,0 +1,49 @@
+.container{
+    display: flex;
+    background-color: white;
+    padding: 24px 16px;
+    box-shadow: 2px 1px 7px rgba(0, 0, 0, 0.08), 0px 2px 1px -1px rgba(0, 0, 0, 0.04), 0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    animation-name: showItem;
+    animation-duration: 0.7s;
+    animation-iteration-count: unset;
+    column-gap: 26px;
+    max-width: 1400px;
+    cursor: pointer;
+}
+.container:-webkit-any-link {
+    text-decoration: none;
+}
+.container:hover{
+    box-shadow: 4px 3px 10px rgba(40,119,237, 0.28), 0px 5px 3px -3px rgba(40,119,237, 0.24), 0px 3px 5px rgba(40,119,237, 0.32);
+}
+
+@keyframes showItem {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.image{
+    border-radius: 50%;
+    min-width: 85px;
+    height: 85px;
+    object-fit: cover;
+    object-position: center;
+}
+@media (max-width: 768px) {
+    .container{
+        background: #EFF0F5;
+        padding: 13px 16px;
+        overflow: hidden;
+        /*align-items: center;*/
+    }
+    .image{
+        margin-top: 32px;
+        min-width: 66px;
+        height: 66px;
+    }
+}

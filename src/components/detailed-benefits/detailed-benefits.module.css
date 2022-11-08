@@ -1,0 +1,38 @@
+.article{
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.625px;
+    color: #3A4562;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.benefit{
+    position: relative;
+}
+.benefit:before{
+    content: '';
+    width: 9px;
+    height: 9px;
+    background: rgba(56, 69, 100, 0.632594);
+    position: absolute;
+    left: -20px;
+    top: calc(12px - 9px/2);
+}
+.benefit{
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.5625px;
+    color: #3A4562;
+}
+@media (max-width: 768px) {
+    .article{
+        margin-bottom: 30px;
+    }
+    .benefit{
+        margin-left: 15px;
+    }
+}

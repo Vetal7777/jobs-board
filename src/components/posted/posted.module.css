@@ -1,0 +1,15 @@
+.container{
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.5625px;
+    color: rgba(56, 65, 93, 0.355988);
+    min-width: 200px;
+}
+@media (max-width: 768px) {
+    .container{
+        min-width: unset;
+    }
+    span.container{
+        white-space: normal;
+    }
+}

@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    column-gap: 1px;
+    min-height: 100%;
+    align-items: center;
+}
+@media (max-width: 768px) {
+    .container{
+        min-height: unset;
+        justify-content: end;
+    }
+    .container path{
+        fill: #384564;
+    }
+    .container svg{
+        width: 10px;
+        height: 10px;
+    }
+}
