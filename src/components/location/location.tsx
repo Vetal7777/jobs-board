@@ -37,7 +37,7 @@ export default function Location({title,location,phone,email,address}:LocationPr
                     </div>
                     <div className={styles.map}>
                         <GoogleMapReact
-                            bootstrapURLKeys={{key: process.env.REACT_APP_GOOGLE_KEY+''}}
+                            bootstrapURLKeys={{key: process.env.REACT_APP_GOOGLE_KEY as string}}
                             defaultCenter={{
                                 lat: location.lat,
                                 lng: location.long
